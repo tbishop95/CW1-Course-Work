@@ -1,0 +1,183 @@
+body {
+	font-size: 16px;
+	font-family: 'Avenir', sans-serif;
+	width: 100%
+}
+
+div {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+i {
+  padding-right: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+/*Navigation Section*/
+navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 4rem;
+	width: 100%;
+  padding-top: 1.5rem;
+	background-color: rgba(255,255,255,0.5);
+	position: fixed;
+	z-index: 2;
+}
+
+.logo {
+	align-items: center;
+	padding-left: 1.5rem;
+}
+
+.logo img {
+	height: 10rem;
+}
+
+#desknav {
+	display: flex;
+	padding-right: 1.5rem;
+}
+
+#desknav a {
+	display: inline-block;
+	padding: 0px 0.5rem;
+	font-weight: 700;
+	color: #000000;
+}
+
+#desknav a:hover {
+	color: #434343;
+  text-decoration: underline;
+	transition: color 300ms ease-in-out;
+  transition: text-decoration 300ms ease-in-out;
+}
+
+#mobnav {
+	display: none;
+}
+
+@media only screen and (max-width: 710px) {
+	#desknav {
+		display: none;
+	}
+
+	#mobnav {
+		display: inherit;
+		padding-right: 1.5rem;
+	}
+
+	#mobnav a {
+		display: inline-block;
+		padding: 0px 0.5rem;
+		font-weight: 300;
+	}
+}
+
+/*Image Scroller*/
+
+/*Job Section*/
+
+/*Summary Section*/
+.summary {
+  background-color: #0A650A;
+  color: #FFFFFF;
+}
+
+.summary h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #cecece;
+  margin-top: 2rem;
+  padding: 1.75rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  color: #FFFFFF;
+  background-color: #777777;
+}
+
+footer a {
+  color: #FFFFFF;
+}
+
+footer a:hover {
+  color: #D0D0D0;
+  text-decoration: underline;
+  transition: color 300ms ease-in-out;
+  transition: text-decoration 300ms ease-in-out;
+}
+
+footer h2 {
+  text-decoration: underline;
+  font-size: 1.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.footerTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation,
+.contactUs  {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+.contactUs span{
+  padding-bottom: 0.5rem;
+}
+
+.navigation span{
+  padding-bottom: 0.5rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+.social img {
+  width: 3rem;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerLinks a { 
+  padding-right: 0.5rem;
+  border-right: 1px solid #FFFFFF;
+}
+
+.footerLinks .last {
+  border-right: none;
+}
+
+@media only screen and (max-width: 660px) {
+	.footerlinks {
+		display: none;
+	}
+
+	.copy {
+		font-size: 0.75rem;
+	}
+}
