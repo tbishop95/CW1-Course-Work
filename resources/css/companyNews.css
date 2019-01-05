@@ -138,91 +138,196 @@ i {
     }
 }
 
-/*Image Scroller*/
-body,
-#slider,
-.wrap,
-.slide-content {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    height: 80vh;
-    overflow-x: hidden;
+/*News*/
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.wrap {
+.newsblocks {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0;
+    font-family: Avenir;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.newsblock {
+    margin-top: 10rem;
+}
+
+.header {
+    font-size: 2.5rem;
+    color: #0A650A;
+    font-weight: 100;
+    padding: 0.5rem;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+    background-color: #0A650A;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.block:hover {
+    box-shadow: 10px 10px 5px #959595;
+    opacity: 1;
+    transition: all 300ms ease-in;
+    background-color: #034D03;
+}
+
+.block img {
+    width: 60%;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.newsTitle {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 40%;
+    padding: 1.5rem;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.newsTitle:hover {
+    background-color: #034D03;
+    transition: background-color 800ms ease-in-out;
+}
+
+.newsNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(119, 119, 119, 0.8);
+    margin: 13rem 2rem 0rem 5rem;
+    width: 25%;
+    height: 25%;
     position: relative;
 }
 
-.slide {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.slide1 {
-    background-image: url('../images/Slideshow-Images/Slide_1.jpeg');
-}
-
-.slide2 {
-    background-image: url('../images/Slideshow-Images/Slide_2.jpeg');
-}
-
-.slide3 {
-    background-image: url('../images/Slideshow-Images/Slide_3.jpeg');
-}
-
-.slide4 {
-    background-image: url('../images/Slideshow-Images/Slide_4.jpeg');
-}
-
-.arrow {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -35px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-}
-
-#arrow-left {
-    border-width: 15px 25px 15px 0;
-    border-color: transparent #FFF transparent transparent;
-    left: 0;
-    margin-left: 30px;
-}
-
-#arrow-right {
-    border-width: 15px 0 15px 25px;
-    border-color: transparent transparent transparent #FFF;
-    right: 0;
-    margin-right: 30px;
-}
-
-/*Job Section*/
-
-/*Summary Section*/
-.companySummary {
-    background-color: #0A650A;
+.newsNav a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
     color: #FFFFFF;
+    font-size: 1.25rem;
+}
+
+.newsNav a:hover {
+    color: #434343;
+    text-decoration: underline;
+    transition: color 300ms ease-in-out;
+    transition: text-decoration 500ms ease-in-out;
+}
+
+@media only screen and (max-width: 900px) {
+    .newsNav {
+        display: none;
+    }
+
+}
+
+/*News Popups*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  cursor: pointer;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modalTitle {
+    font-size: 2.5rem;
+    color: #0A650A;
+    font-weight: 100;
+    padding: 0.5rem;    
+}
+
+.modalText {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.newsStory {
+    display: flex;
+    flex-direction: row;
+    background-color: #0A650A;
+    width: 80%;
+    color: #FFFFFF;
+    margin: 0.5rem;
+}
+
+.newsStory img {
+    width: 30%;
+}
+
+.story {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 0.5rem;
-    padding: 1rem;
-    text-align: center;
-}
-
-.companySummary h2 {
-    font-size: 2rem;
-    text-align: center;
-}
-
-.companySummary span {
     padding: 0.5rem;
-    font-size: 1.25rem;
+}
+
+.innerTitle {
+font-size: 1.5rem;
+}
+
+.date {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.testimonialImg {
+    padding: 0.5rem;
+}
+
+.testimonial {
+    font-size: 1rem;
+    color: #FFFFFF;
 }
 
 /*Footer*/
@@ -233,9 +338,9 @@ footer {
     margin-top: 2rem;
     padding: 1.75rem;
     padding-bottom: 1rem;
-    margin-bottom: 3rem;
     color: #FFFFFF;
     background-color: #777777;
+    position: relative;
 }
 
 footer a {

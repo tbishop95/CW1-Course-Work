@@ -41,6 +41,7 @@ i {
     background-color: rgba(10, 101, 10, 0.5);
     position: fixed;
     z-index: 2;
+
 }
 
 .nav > .nav-header {
@@ -84,6 +85,10 @@ i {
 }
 
 @media (max-width:900px) {
+    .nav {
+        position: relative;
+    }
+
     .nav > .nav-btn {
         display: inline-block;
         position: absolute;
@@ -138,91 +143,154 @@ i {
     }
 }
 
-/*Image Scroller*/
-body,
-#slider,
-.wrap,
-.slide-content {
-    margin: 0;
+/*About Us*/
+.aboutUs {
+    margin-top: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    height: 80vh;
+    font-family: Avenir;
+    height: 90vh;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
 }
 
-.wrap {
-    position: relative;
-}
-
-.slide {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.slide1 {
-    background-image: url('../images/Slideshow-Images/Slide_1.jpeg');
-}
-
-.slide2 {
-    background-image: url('../images/Slideshow-Images/Slide_2.jpeg');
-}
-
-.slide3 {
-    background-image: url('../images/Slideshow-Images/Slide_3.jpeg');
-}
-
-.slide4 {
-    background-image: url('../images/Slideshow-Images/Slide_4.jpeg');
-}
-
-.arrow {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -35px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-}
-
-#arrow-left {
-    border-width: 15px 25px 15px 0;
-    border-color: transparent #FFF transparent transparent;
-    left: 0;
-    margin-left: 30px;
-}
-
-#arrow-right {
-    border-width: 15px 0 15px 25px;
-    border-color: transparent transparent transparent #FFF;
-    right: 0;
-    margin-right: 30px;
-}
-
-/*Job Section*/
-
-/*Summary Section*/
-.companySummary {
-    background-color: #0A650A;
-    color: #FFFFFF;
+.about {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 0.5rem;
+    justify-content: center;
+    width: 80%;
+}
+
+.header {
+    font-size: 2.5rem !important;
+    color: #0A650A !important;
+    font-weight: 100 !important;
+    padding: 0.5rem !important;
+}
+
+.about span {
     padding: 1rem;
-    text-align: center;
 }
 
-.companySummary h2 {
-    font-size: 2rem;
-    text-align: center;
+.aboutNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(119, 119, 119, 0.8);
+    margin-top: 10rem;
+    margin-right: 2rem;
+    width: 20%;
 }
 
-.companySummary span {
-    padding: 0.5rem;
+.aboutNav span {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    color: #FFFFFF;
     font-size: 1.25rem;
+}
+
+.aboutNav span:hover {
+    color: #434343;
+    text-decoration: underline;
+    transition: color 300ms ease-in-out;
+    transition: text-decoration 500ms ease-in-out;
+}
+
+@media only screen and (max-width:900px) {
+    .aboutNav {
+        display: none;
+    }
+}
+
+/*About Us Popups*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  cursor: pointer;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modalTitle {
+    font-size: 2.5rem;
+    color: #0A650A;
+    font-weight: 100;
+    padding: 0.5rem;    
+}
+
+.modalText {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.newsStory {
+    display: flex;
+    flex-direction: row;
+    background-color: #0A650A;
+    width: 80%;
+    color: #FFFFFF;
+    margin: 0.5rem;
+}
+
+.newsStory img {
+    width: 30%;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.innerTitle {
+font-size: 1.5rem;
+}
+
+.date {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.testimonialImg {
+    padding: 0.5rem;
+}
+
+.testimonial {
+    font-size: 1rem;
+    color: #FFFFFF;
 }
 
 /*Footer*/

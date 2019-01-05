@@ -138,91 +138,120 @@ i {
     }
 }
 
-/*Image Scroller*/
-body,
-#slider,
-.wrap,
-.slide-content {
-    margin: 0;
+/*Contact*/
+.contactPage {
+    margin-top: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    height: 80vh;
+    font-family: Avenir;
+    height: 90vh;
     overflow-x: hidden;
-}
-
-.wrap {
-    position: relative;
-}
-
-.slide {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.slide1 {
-    background-image: url('../images/Slideshow-Images/Slide_1.jpeg');
-}
-
-.slide2 {
-    background-image: url('../images/Slideshow-Images/Slide_2.jpeg');
-}
-
-.slide3 {
-    background-image: url('../images/Slideshow-Images/Slide_3.jpeg');
-}
-
-.slide4 {
-    background-image: url('../images/Slideshow-Images/Slide_4.jpeg');
-}
-
-.arrow {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -35px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-}
-
-#arrow-left {
-    border-width: 15px 25px 15px 0;
-    border-color: transparent #FFF transparent transparent;
-    left: 0;
-    margin-left: 30px;
-}
-
-#arrow-right {
-    border-width: 15px 0 15px 25px;
-    border-color: transparent transparent transparent #FFF;
-    right: 0;
-    margin-right: 30px;
-}
-
-/*Job Section*/
-
-/*Summary Section*/
-.companySummary {
-    background-color: #0A650A;
-    color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 0.5rem;
-    padding: 1rem;
-    text-align: center;
+    margin-top: 10rem;
 }
 
-.companySummary h2 {
-    font-size: 2rem;
-    text-align: center;
+.header {
+    font-size: 2.5rem !important;
+    color: #0A650A !important;
+    font-weight: 100;
+    padding: 1.5rem;
 }
 
-.companySummary span {
+.contactTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.map {
+    width: 75%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(119, 119, 119, 0.8);
+    width: 20%;
+    padding: 1.25rem;
+}
+
+.details a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #0A650A;
+    font-size: 1rem;
+}
+
+.details span {
     padding: 0.5rem;
+    color: #FFFFFF;
     font-size: 1.25rem;
+}
+
+.details i {
+    color: #0A650A;
+}
+
+.contactBottom {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+label {
+    font-family: "Avenir", sans-serif;
+    font-size: 1.25rem;
+}
+
+input,
+textarea {
+    font-family: "Avenir", sans-serif;
+    outline: 0;
+    background: #F2F2F2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.submit {
+    font-family: "Avenir", sans-serif;
+    outline: 0;
+    background: #0A650A;
+    color: #FFFFFF;
+    width: 100%;
+    border: 0;
+    margin-top: 0.5rem;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: #034D03;
+}
+
+@media only screen and (max-width: 900px) {
+    .contactPage {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactTop {
+        flex-direction: column;
+    }
+
+    .map,
+    .details,
+    .contactBottom {
+        width: 100%;
+        align-items: center;
+    }
+
 }
 
 /*Footer*/
@@ -233,7 +262,6 @@ footer {
     margin-top: 2rem;
     padding: 1.75rem;
     padding-bottom: 1rem;
-    margin-bottom: 3rem;
     color: #FFFFFF;
     background-color: #777777;
 }
@@ -330,7 +358,7 @@ footer h2 {
 }
 
 .footerLinks a {
-    padding-right: 0.5rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
     border-right: 1px solid #FFFFFF;
 }
 
