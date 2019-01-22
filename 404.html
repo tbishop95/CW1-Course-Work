@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-    <link href="./resources/css/contactUs.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/404.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <script type="text/javascript" src="./resources/JavaScript/myScripts.js"></script>
-    <title>Hospitality Search International | Contact Us</title>
+    <title>Hospitality Search International | About Us</title>
 </head>
+
 <body>
     <header>
         <div class="nav">
@@ -37,79 +38,40 @@
         </div>
     </header>
     <main>
-    <div class="contactPage">
-        <span class="header">Contact Us</span>
-        <div class="contactTop">
-            <div class="map">
-                <iframe class="deskMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2301.3285601901216!2d-0.08583738436885925!3d51.52547147963811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761caff556d2eb%3A0x63bd0847f3599164!2sPaul+St%2C+London+EC2A+4NE!5e1!3m2!1sen!2suk!4v1546519401955" width="750" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <iframe class="mobMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2301.3285601901216!2d-0.08583738436885925!3d51.52547147963811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761caff556d2eb%3A0x63bd0847f3599164!2sPaul+St%2C+London+EC2A+4NE!5e1!3m2!1sen!2suk!4v1546519401955" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-            <div class="details">
-                <span class="header">Contact Details</span>
-                <span>Hospitality Search International</span>
-                <span>4th Floor, 86 - 90 Paul Street</span>
-                <span>London</span>
-                <span>EC2A 4NE</span>
-                <span>United Kingdom</span>
-                <span><i class="fas fa-phone"></i><a href="tel:+44 (0) 203 322 9391">+44 (0) 203 322 9391</a></span>
-                <span><i class="fas fa-envelope"></i><a href="mailto:office@hospitalitysearch.co.uk">office@hospitalitysearch.co.uk</a></span>
+    <div class="pageNotFound">
+        <span class="heading">Whoops, the page you wanted doesn't seem to be working</span>
+        <br>
+        <br>
+        <span class="subheading">We've got a few ideas why.</span>
+        <ul class="ideas">
+            <li class="idea">If you typed the URL directly, please make sure the spelling is correct.</li>
+            <li class="idea">If you clicked on a link to get here, the link is unfortunatley outdated.</li>
+        </ul>
+        <div class="help">
+            <span class="subheading">What can you do?</span>
+            <span>Have no fear, help is near! There are many ways you can get back on track with the HSI website.</span>
+            <div class="options">
+                <div class="helpButton">
+                    <a href="#" onclick="history.go(-1); return false;">
+                        <i class="fas fa-undo-alt"></i>
+                        <span class="buttonText">Go back to the previous page.</span>
+                    </a>
+                </div>
+                <div class="helpButton">
+                    <a href="home.html">
+                        <i class="fas fa-home"></i>
+                        <span class="buttonText">Homepage</span>
+                    </a>
+                </div>
+                <div class="helpButton">
+                    <a href="mailto:apply@hospitalitysearch.co.uk?Subject=Need Help Finding a Role?">
+                        <i class="far fa-envelope"></i>
+                        <span class="buttonText">Email Us</span>
+                    </a>
+                </div>
             </div>
         </div>
-    <div class="contactBottom">
-        <span class="header">Contact Form</span>
-        <form name="contactform" method="post" action="send_form_email.php">
-            <table width="450px">
-                <tr>
-                    <td valign="top">
-                        <label for="first_name">First Name *</label>
-                    </td>
-                    <td valign="top">
-                        <input type="text" name="first_name" maxlength="50" size="30">
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top"">
-  <label for=" last_name">Last Name *</label>
-                    </td>
-                    <td valign="top">
-                        <input type="text" name="last_name" maxlength="50" size="30">
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top">
-                        <label for="email">Email Address *</label>
-                    </td>
-                    <td valign="top">
-                        <input type="text" name="email" maxlength="80" size="30">
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top">
-                        <label for="telephone">Telephone Number</label>
-                    </td>
-                    <td valign="top">
-                        <input type="text" name="telephone" maxlength="30" size="30">
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top">
-                        <label for="comments">Comments *</label>
-                    </td>
-                    <td valign="top">
-                        <textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align:center">
-                        <input class="submit" type="submit" value="Submit"> <a href="email_form.php"></a>
-                    </td>
-                </tr>
-            </table>
     </div>
-    </div>
-</form>
-</div>
-</div>
 </main>
     <footer>
         <div class="footerTop">
@@ -148,12 +110,63 @@
         <div class="footerBottom">
             <span>&copy; 2018 Hospitality Search International | All rights reserved | TB Web Design</span>
             <div class="footerLinks">
-                <a href=404.html>Sitemap</a>
-                <a href=404.html>Terms &amp; Conditions</a>
-                <a href=404.html>Privacy Policy</a>
-                <a href=404.html>Cookie Policy</a>
-                <a class="last" href=404.html>Privacy Notice</a>
+                <a href=sitemap.html>Sitemap</a>
+                <a href=terms.html>Terms &amp; Conditions</a>
+                <a href=privacy.html>Privacy Policy</a>
+                <a href=cookies.html>Cookie Policy</a>
+                <a class="last" href=privacyNotice.html>Privacy Notice</a>
             </div>
         </div>
     </footer>
 </body>
+<script>
+    // Get the modal
+    var modal = document.getElementsByClassName('modal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementsByClassName("myBtn");
+
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close");
+
+    // When the user clicks the button, open the modal 
+    btn[0].onclick = function() {
+        modal[0].style.display = "block";
+    }
+
+    btn[1].onclick = function() {
+        modal[1].style.display = "block";
+    }
+
+    btn[2].onclick = function() {
+        modal[2].style.display = "block";
+    }
+
+    btn[3].onclick = function() {
+        modal[3].style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal
+    span[0].onclick = function() {
+        modal[0].style.display = "none";
+    }
+
+    span[1].onclick = function() {
+        modal[1].style.display = "none";
+    }
+
+    span[2].onclick = function() {
+        modal[2].style.display = "none";
+    }
+
+    span[3].onclick = function() {
+        modal[3].style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+</script>

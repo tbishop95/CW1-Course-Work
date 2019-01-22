@@ -4,10 +4,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/jobApplication.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script type="text/javascript" src="./resources/JavaScript/myScripts.js"></script>
-    <title>Hospitality Search International</title>
+    <title>Hospitality Search International | Job Application</title>
 </head>
 
 <body>
@@ -35,6 +36,252 @@
                 <a href="contactUs.html">Contact Us</a>
             </div>
         </div>
+    </header>
+    <main>
+         <form class="application__form">
+
+      <!-- Section one -->
+
+      <section class="application__step">
+
+        <h2 class="application__step-header">
+          <span class="application__step-num">1</span> 
+          Please Enter Your Email Address
+        </h2>
+
+        <!-- Email question --> 
+        <div class="application__question">
+          <span class="application__message">We'll use this to get in touch wo
+            ith you about your application</span>
+          <div class="layout__row">
+
+            <!-- Input and label -->
+            <div class="application__question-container application__question-container--text margin-l">
+              <label class="application__label-text" for="email">
+              Email
+              </label>
+              <input type="email" id="email" class="application__input application__input--email margin-l" name="email" > 
+            </div>
+
+            <!-- Error tag -->
+            <span class="application__error">
+              <i class="fas fa-times application__error-icon"></i>
+            </span>
+            <button id="continue-sec2" class="application__button application__button--continue margin-r">Next</button>
+          </div> <!-- / layout__row -->
+        </div> <!-- / application question -->
+      </section>
+
+      <div id="progress" class="application__controls">
+        <div class="layout__row">
+          <div class="application__meter">
+            <span class="application__meter-bar" style="width: 30%;"></span>
+          </div>
+          <span class="application__progress-text">30%</span>
+        </div>
+      </div>
+
+      <!-- Section two -->
+
+      <section class="application__step">
+
+        <h2 class="application__step-header">
+          <span class="application__step-num">2</span> 
+          Your Details
+        </h2>
+
+        <div id="section-2" class="hide-questions hide-questions--on">
+          
+          <!-- CV Question -->
+          <div class="application__question">
+
+            <label class="application__label">Upload CV</label>
+            <button class="application__button application__button--upload margin-l">
+              Choose a file <i class="fas fa-cloud-upload-alt"></i>
+            </button>
+
+          </div>
+
+<!-- Job Role question -->
+          <div class="application__question">
+
+            <label class="application__label">Job Role</label>
+
+            <div class="application__select-container margin-l">
+              <select class="application__select">
+                <option>Sous Chef</option>
+                <option>Restaurant Manager
+</option>
+                <option>Director of Rooms
+</option>
+                <option>Director of Food & Beverage
+</option>
+              </select>
+              <span class="application__select-border"></span>
+            </div>
+
+          </div><!-- / application__question -->
+
+          <!-- Available from question -->
+          <div class="application__question">
+
+            <label class="application__label">Available from</label>
+
+            <div class="layout__row">
+              <div class="application__select-container margin-l">
+                <select class="application__select">
+                  <option>2018</option>
+                  <option>2019</option>
+                  <option>2020</option>
+                  <option>2021</option>
+                </select>
+                <span class="application__select-border"></span>
+              </div>
+
+              <div class="application__select-container margin-l margin-r">
+                <select class="application__select">
+                  <option>January</option>
+                  <option>February</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+                </select>
+                <span class="application__select-border"></span>
+              </div>
+            </div><!-- /layout__row -->
+
+          <!-- Similar Role -->
+          <div class="application__question">
+
+            <div class="layout__row">
+              <label class="application__label application__label--vertical-align">Are you currently holding a similar role?</label>
+              <div class="margin-l application__radio">
+                <input type="radio" name="authorised" id="role-yes" class="application__radio-button" value="yes">
+                <label for="role-yes" class="application__radio-label">Yes</label>
+              </div>
+
+              <div class="application__radio">
+                <input type="radio" id="role-no" class="application__radio-button" name="authorised" value="no">
+                <label for="role-no" class="application__radio-label">No</label>
+              </div>
+            </div> <!-- /layout__row -->
+
+          </div><!-- / application__question -->
+            
+
+          <!-- Arabic -->
+          <div class="application__question">
+
+            <div class="layout__row">
+              
+              <label class="application__label application__label--vertical-align">Are you able to speak fluently in Arabic?</label>
+              <div class="margin-l application__radio">
+                <input type="radio" name="contact" id="fluent-yes" class="application__radio-button" value="yes">
+                <label for="fluent-yes" class="application__radio-label">Yes</label>
+              </div>
+
+              <div class="application__radio">
+                <input type="radio" name="contact" id="fluent-no" class="application__radio-button" value="no">
+                <label for="fluent-no" class="application__radio-label">No</label>
+              </div>
+
+            </div> <!-- /layout__row -->
+            </div>
+          <!-- Contact Role -->
+          <div class="application__question">
+
+            <div class="layout__row">
+              <label class="application__label application__label--vertical-align">Are you happy for us to contact you and understand you will only be contacted if shortlisted?</label>
+              <div class="margin-l application__radio">
+                <input type="radio" name="authorised" id="contact-yes" class="application__radio-button" value="yes">
+                <label for="contact-yes" class="application__radio-label">Yes</label>
+              </div>
+
+              <div class="application__radio">
+                <input type="radio" id="contact-no" class="application__radio-button" name="authorised" value="no">
+                <label for="contact-no" class="application__radio-label">No</label>
+              </div>
+            </div> <!-- /layout__row -->
+
+          </div><!-- / application__question -->
+            
+          </div><!-- / application__question -->
+          <div class="application__question">
+            <button id="continue-sec3" class="application__button application__button--continue margin-r">Next</button>
+          </div>
+        </div><!--/ section-2 -->
+
+      </section>
+
+
+      <div id="progress2" class="application__controls">
+        <div class="layout__row">
+          <div class="application__meter">
+            <span class="application__meter-bar" style="width: 80%;"></span>
+          </div>
+          <span class="application__progress-text">80%</span>
+        </div>
+      </div>
+      <!-- Section three -->
+
+      <section class="application__step">
+        <h2 class="application__step-header"><span class="application__step-num">3</span> Apply</h2>
+        <div id="section-3" class="hide-questions hide-questions--on">
+          <div class="application__question">
+            <div class="layout__row">
+              <!-- Input and label -->
+              <div class="application__question-container application__question-container--text margin-l">
+                <label class="application__label-text" for="name">
+                  Name
+                </label>
+                <input class="application__input margin-l" id="name" name="name" type="text"> 
+              </div>
+              <!-- Error tag -->
+              <span class="application__error">
+                <i class="fas fa-times application__error-icon"></i>
+              </span>
+            </div> <!-- / layout__row -->
+          </div> <!-- / application question -->
+
+          <div class="application__question">
+            <div class="layout__row">
+              <!-- Input and label -->
+              <div class="application__question-container application__question-container--text margin-l">
+                <label class="application__label-text" for="phone">
+                Contact Number
+                </label>
+                <input class="application__input margin-l" id="phone" name="phone" type="tel"> 
+              </div>
+              <!-- Error tag -->
+              <span class="application__error">
+                <i class="fas fa-times application__error-icon"></i>
+              </span>
+            </div> <!-- / layout__row -->
+          </div> <!-- / application question -->
+
+          <!-- Cover letter Question -->
+          <div class="application__question">
+            <label class="application__label">Upload cover letter (optional)</label>
+            <button class="application__button application__button--upload margin-l">
+              Choose a file <i class="fas fa-cloud-upload-alt"></i>
+            </button>
+          </div> <!-- / application question -->
+
+          <button class="application__button application__button--continue application__button--central">Apply to this role</button>
+          </section>
+
+        </div> <!-- section 3 -->
+
+    </form> <!-- application__form -->
+  </div> <!-- / application -->
+    </main>
         <footer>
             <div class="footerTop">
                 <div class="navigation">
@@ -72,12 +319,87 @@
             <div class="footerBottom">
                 <span>&copy; 2018 Hospitality Search International | All rights reserved | TB Web Design</span>
                 <div class="footerLinks">
-                    <a href=sitemap.html>Sitemap</a>
-                    <a href=terms.html>Terms &amp; Conditions</a>
-                    <a href=privacy.html>Privacy Policy</a>
-                    <a href=cookies.html>Cookie Policy</a>
-                    <a class="last" href=privacyNotice.html>Privacy Notice</a>
+                    <a href=404.html>Sitemap</a>
+                    <a href=404.html>Terms &amp; Conditions</a>
+                    <a href=404.html>Privacy Policy</a>
+                    <a href=404.html>Cookie Policy</a>
+                    <a class="last" href=404.html>Privacy Notice</a>
                 </div>
             </div>
         </footer>
 </body>
+</html>
+<script type="text/javascript">
+    /*JOB APPLICATION PAGE*/
+
+  /* When page is loaded  */
+if(document.readyState === "complete") {
+  setEvents();
+  /* TEMPORARY FOR DEMONSTRATION PURPOSES ONLY */
+  tempDemo();
+} else {
+  document.addEventListener("DOMContentLoaded", function () {
+    setEvents();
+    /* TEMPORARY FOR DEMONSTRATION PURPOSES ONLY */
+    tempDemo();
+  }, false);
+}
+
+/* Functions */
+function setEvents () {
+  let questions = document.getElementsByClassName('application__question-container--text');
+  for (let i = 0; i <= questions.length - 1; i++) {
+    let questionsChildren = questions[i].children;
+    let labelItem = questionsChildren[0];
+    let questionItem = questionsChildren[1];
+    questionItem.addEventListener("focus", function(){labelClass(labelItem, questionItem, 'focus')});
+    questionItem.addEventListener("blur", function(){labelClass(labelItem, questionItem, 'blur')});
+  }
+}
+
+function labelClass (label, question, type) {
+  if(type == 'blur') {
+    if (question.value !== '') {
+      label.className += ' application__label-text--up';  
+    } else {
+      label.className = 'application__label-text';
+    }
+  } else if (type == 'focus') {
+    if (label.className !== 'application__label-text application__label-text--up') {
+      label.className += ' application__label-text--up';
+    }         
+  }
+}
+
+function tempDemo () {
+  /* Temporary script to make the next button move you to section 2 and show the progress bar. */
+  let continueButton = document.getElementById('continue-sec2');
+  continueButton.addEventListener("click", function(event){
+    event.preventDefault();
+    document.getElementById('section-2').className = 'hide-questions';
+    document.getElementById('progress').className += ' application__controls--on';
+    document.getElementById('progress').scrollIntoView('smooth');
+continueButton.style.display = 'none';
+  });
+   /* Temporary script to make the next button move you to section 3 and hide the old progress bar then show the new one. */
+  let nextButton = document.getElementById('continue-sec3');
+  nextButton.addEventListener("click", function(event){
+    event.preventDefault();
+    document.getElementById('section-3').className = 'hide-questions';
+    document.getElementById('progress').className = 'application__controls';
+    document.getElementById('progress2').className += ' application__controls--on';
+    document.getElementById('progress2').scrollIntoView('smooth');
+    nextButton.style.display = 'none';
+  });
+  let chevron = document.getElementById('chevron');
+  /* Change the chevron and show the message */
+  chevron.addEventListener("click", function(event){
+    let chevronIcon = document.getElementById('path').getAttribute('d');
+    if (chevronIcon == "M8.398 5.75q0 0.102-0.078 0.18l-3.641 3.641q-0.078 0.078-0.18 0.078t-0.18-0.078l-3.641-3.641q-0.078-0.078-0.078-0.18t0.078-0.18l0.391-0.391q0.078-0.078 0.18-0.078t0.18 0.078l3.070 3.070 3.070-3.070q0.078-0.078 0.18-0.078t0.18 0.078l0.391 0.391q0.078 0.078 0.078 0.18z") {
+ document.getElementById('help').className = 'application__help-message application__help-message--on';     document.getElementById('path').setAttribute('d', "M8.398 9.25q0 0.102-0.078 0.18l-0.391 0.391q-0.078 0.078-0.18 0.078t-0.18-0.078l-3.070-3.070-3.070 3.070q-0.078 0.078-0.18 0.078t-0.18-0.078l-0.391-0.391q-0.078-0.078-0.078-0.18t0.078-0.18l3.641-3.641q0.078-0.078 0.18-0.078t0.18 0.078l3.641 3.641q0.078 0.078 0.078 0.18z");
+    } else {
+  document.getElementById('help').className = 'application__help-message application__help-message--off';    document.getElementById('path').setAttribute('d', "M8.398 5.75q0 0.102-0.078 0.18l-3.641 3.641q-0.078 0.078-0.18 0.078t-0.18-0.078l-3.641-3.641q-0.078-0.078-0.078-0.18t0.078-0.18l0.391-0.391q0.078-0.078 0.18-0.078t0.18 0.078l3.070 3.070 3.070-3.070q0.078-0.078 0.18-0.078t0.18 0.078l0.391 0.391q0.078 0.078 0.078 0.18z");
+    }
+});
+}
+</script>
